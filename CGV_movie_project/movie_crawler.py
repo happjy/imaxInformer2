@@ -8,7 +8,7 @@ bot = telegram.Bot(token='803288229:AAF3jcyErpuDmvg2Ga9yDaZ9Djd0_9tv7vE')
 
 
 def job_function():
-    url = "http://www.cgv.co.kr/common/showtimes/iframeTheater.aspx?areacode=01&theatercode=0013&date=20190718"
+    url = "http://www.cgv.co.kr/common/showtimes/iframeTheater.aspx?areacode=01&theatercode=0013&date=20190723"
     html = requests.get(url)
     soup = BeautifulSoup(html.text, 'html.parser')
     imax = soup.select_one('span.imax')
